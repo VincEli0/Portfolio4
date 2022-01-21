@@ -1,0 +1,438 @@
+/*Elisha*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.Navbar{
+  text-decoration: none;
+  width: 100%;
+  height: 6.5rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: #CF3341;
+  z-index: 2;
+}
+.Navbar ul{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px;
+}
+.Navbar a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 20px;
+  color:#A22833;
+  font-weight: bold;
+}
+.Navbar ul li:hover> ul{
+  display: block;
+}
+.Navbar ul ul {
+  display: none;
+  top:39px;
+  position:absolute;
+
+}
+.Navbar ul li {
+   display:block;
+}
+
+.Navbar ul ul li a{
+  overflow: hidden;
+  min-width: 200px;
+  padding-top: 1px;
+  color: white;
+  background-color:#da636d;
+  float: left;
+}
+
+.Navbar ul ul li a:hover{
+  background-color: #d85965;
+
+}
+
+.MobileNav {
+  display: None;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #CF3341;
+  color: white;
+  font-weight: bold;
+
+}
+.MobileNav h1{
+  font-size: 30px;
+  background-color:#A22833;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+.MobileNav a {
+  font-size: 25px;
+}
+
+.MobileMenu{
+  margin-left: 43%;
+  margin-top:30px;
+}
+
+
+.BackgroundExtend {
+  padding-inline: 60px;
+  padding-block: 10px;
+}
+.Search input{
+  width: 300px;
+  height: 2rem;
+}
+.search-btn{
+    position: relative;
+    right: 30px;
+    background-color: transparent;
+    border: 0;
+}
+.HeaderContainer{
+  background-color:#A22833;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  z-index: -10;
+}
+
+.HeaderResultsContainer{
+  background-color:#A22833;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: -10;
+}
+.ProfileContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+.backgroundIMG {
+  background-color:white;
+  padding: 150px;
+}
+.ProfileBackground {
+  background-color: #CF3341;
+  padding-right:400px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+.Container{
+  background-color:#A22833;
+  margin-top:-20px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.AboutContainer{
+  text-align: center;
+  margin-left: 55%;
+  margin-top: -100px;
+  margin-right:10%;
+  font-weight: bold;
+  color: white;
+}
+.AboutContainer p {
+  font-size: 20px;
+}
+.PortfolioContainer{
+  margin-right: 75%;
+  padding-bottom: 200px;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  margin-top: -50px;
+  margin-left: 10px;
+}
+.Portfolioitem{
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  background-color: #CF3341;
+}
+.footerconfig{
+  display: flex;
+  background-color: #CF3341;
+  padding-bottom: 10px;
+  padding-top:10px;
+  color: white;
+  font-size:20px;
+  font-weight:bold;
+  justify-content: space-between;
+}
+.Search-btn{
+    position: relative;
+    right: 30px;
+    background-color: transparent;
+    border: 0;
+}
+.ResultsContainer{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 150px;;
+  background-color: #CF3341;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin-right: 85%;
+  z-index: -2;
+}
+
+.ResultsContainer form label{
+  background-color: white;
+  color:#CF3341;
+  max-width: 300px;
+  padding: 2px 10px;
+
+}
+.FilterTitleBorder{
+  position: relative;
+  top: 10px;
+  margin: auto 40px 20px;
+  max-width: 150px;
+
+  background-color:#A22833;
+}
+.Filterbutton {
+  background-color:#A22833;
+  border: none;
+  color: white;
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.SearchResults{
+  position: absolute;
+  display: flex;
+  top:300px;
+  left: 250px;
+  flex-direction: column;
+
+}
+.SearchResultsBox{
+  background-color:#A22833;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-bottom: 20px;
+
+}
+
+.SearchResultsBox ul{
+  list-style-type: none;
+  text-decoration: none;
+}
+.SearchResults-1 {
+  top:270px;
+  left: 250px;
+  position: absolute;
+  background-color:#A22833;
+  color: white;
+  max-height: 200px;
+  max-width: 800px;
+  padding-right: 800px;
+  font-size: 25px;
+  font-weight: bold;
+  display: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+.FormSection h1{
+  text-align: center;
+  color:#A22833;
+  font-size: 40px;
+}
+.FormSection input{
+  border-color:#4EB7DA;
+}
+.FormSection textarea{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  border-color:#A22833;
+
+}
+.submit{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#A22833;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+}
+
+.FAQArea{
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.Question {
+  background-color:#A22833;
+}
+.Answer {
+  background-color:#CF3341;
+}
+/* Sepereating portfolio css as it's getting a bit too confusing*/
+.section-2{
+    background-color: #a22833;
+    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.section-3{
+    background-color: #a22833;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.section-4{
+    background-color: #a22833;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+}
+.image-description{
+    background-color: #b72d3a;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: white;
+}
+.images{
+    width: 50%;
+    height: auto;
+    margin-left: 40px;
+    margin-top: -150px;
+    border-style: solid;
+}
+.upload{
+    text-align: center;
+}
+.upload-btn{
+    background-color: #b72d3a;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    outline: 0;
+    border: 0;
+    font-weight: bold;
+}
+/**/
+
+
+@media only screen and (max-width: 1150px) {
+  .MobileNav{
+    display: flex;
+  }
+  .Navbar{
+      display: none;
+  }
+  .HeaderContainer h1{
+    padding-bottom: 79px;
+    font-size: 45px;
+  }
+  .ProfileContainer{
+    flex-direction: column;
+  }
+  .backgroundIMG {
+    border-style: solid;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .ProfileBackground{
+    padding-bottom: 50px;
+  }
+  .FilterTitleBorder{
+    position:relative;
+    margin: auto auto;
+    padding: 4px 15px
+
+  }
+  .Filterbutton{
+    padding: 13px 25px;
+    position: relative;
+    bottom: -20px;
+    }
+
+  .ResultsContainer{
+    margin-right: 55%;
+  }
+  .ResultsContainer form label{
+    position: relative;
+    bottom: -20px;
+
+  }
+  .ResultsContainer form input{
+    position: relative;
+    bottom: -20px;
+  }
+.SearchResults{
+  top: 520px;
+  left:250px;
+}
+.SearchResultsBox{
+  padding-right: 180px;
+  font-size: 20px;
+}
+.images{
+    width: 100%;
+    margin auto;
+    height: auto;
+}
+.image-description{
+  padding: 40px;
+}
+.MobileNav a:hover{
+  background-color: #d85965;
+}
+.search-btn{
+  color: black;
+}
+}
